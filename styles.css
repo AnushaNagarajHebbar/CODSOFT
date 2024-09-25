@@ -1,64 +1,86 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
 }
 
-/* Calculator Container */
-.calculator {
+/* Header Section */
+header {
     background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+/* Tribute Content */
+.tribute-content {
+    max-width: 900px;
+    margin: 30px auto;
     padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Display */
-#display {
-    width: 100%;
-    height: 60px;
-    font-size: 24px;
-    text-align: right;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
+/* Image Section */
+.image-container {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/* Buttons */
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+.image-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #333;
 }
 
-.btn {
+/* Bio Section */
+.bio {
+    text-align: left;
     padding: 20px;
-    font-size: 24px;
-    background-color: #444;
+}
+
+.bio h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.bio p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.bio ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bio ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.bio ul li strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #555;
-}
-
-/* Equal button with larger size */
-.equal-btn {
-    grid-column: span 2;
-    background-color: #ff9800;
-}
-
-.equal-btn:hover {
-    background-color: #ff5722;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
